@@ -19,4 +19,12 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Airports\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\NoferApi.Infrastructure\NoferApi.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

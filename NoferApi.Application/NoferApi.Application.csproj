@@ -6,4 +6,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Airports\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\NoferApi.Domain\NoferApi.Domain.csproj" />
+      <ProjectReference Include="..\NoferApi.Shared\NoferApi.Shared.csproj" />
+    </ItemGroup>
+
 </Project>
