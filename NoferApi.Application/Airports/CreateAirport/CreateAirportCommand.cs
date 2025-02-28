@@ -1,10 +1,9 @@
-using NoferApi.Shared;
+using NoferApi.Application.Abstractions.Messaging;
 
-namespace NoferApi.Domain.Airports;
+namespace NoferApi.Application.Airports.CreateAirport;
 
-public class Airport : Entity
+public class CreateAirportCommand : ICommand<int>
 {
-    public int Id { get; set; }
     public string Type { get; set; }
     public string Name { get; set; }
     public double Latitude { get; set; }
@@ -22,5 +21,4 @@ public class Airport : Entity
     public string WebsiteLink { get; set; }
     public string WikipediaLink { get; set; }
     public HashSet<string> Keywords { get; set; } = new HashSet<string>();
-
 }
