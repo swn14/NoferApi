@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		compose.yaml = compose.yaml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoferApi.Domain", "NoferApi.Domain\NoferApi.Domain.csproj", "{B244D5BE-AE76-4E81-B8C5-7C1E83600E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoferApi.Infrastructure", "NoferApi.Infrastructure\NoferApi.Infrastructure.csproj", "{C9585F32-6B89-4FF6-9904-B142FEDA25EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoferApi.Application", "NoferApi.Application\NoferApi.Application.csproj", "{E817A86E-452B-49F9-B8C4-AE9336661A7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,5 +23,17 @@ Global
 		{5CE9C4E8-9BA8-40E9-9C2C-D1F80D4D9BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CE9C4E8-9BA8-40E9-9C2C-D1F80D4D9BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CE9C4E8-9BA8-40E9-9C2C-D1F80D4D9BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B244D5BE-AE76-4E81-B8C5-7C1E83600E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B244D5BE-AE76-4E81-B8C5-7C1E83600E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B244D5BE-AE76-4E81-B8C5-7C1E83600E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B244D5BE-AE76-4E81-B8C5-7C1E83600E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9585F32-6B89-4FF6-9904-B142FEDA25EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9585F32-6B89-4FF6-9904-B142FEDA25EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9585F32-6B89-4FF6-9904-B142FEDA25EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9585F32-6B89-4FF6-9904-B142FEDA25EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E817A86E-452B-49F9-B8C4-AE9336661A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E817A86E-452B-49F9-B8C4-AE9336661A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E817A86E-452B-49F9-B8C4-AE9336661A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E817A86E-452B-49F9-B8C4-AE9336661A7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
