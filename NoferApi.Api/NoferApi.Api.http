@@ -1,0 +1,6 @@
+@NoferApi.Api_HostAddress = http://localhost:5001
+
+GET {{NoferApi.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

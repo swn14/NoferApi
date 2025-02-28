@@ -1,0 +1,6 @@
+﻿services:
+  noferapi.api:
+    image: noferapi.api
+    build:
+      context: .
+      dockerfile: NoferApi.Api/Dockerfile
