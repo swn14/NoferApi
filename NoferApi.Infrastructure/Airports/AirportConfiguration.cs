@@ -9,5 +9,8 @@ public class AirportConfiguration : IEntityTypeConfiguration<Airport>
     public void Configure(EntityTypeBuilder<Airport> builder)
     {
         builder.HasKey(airport => airport.Id);
+        builder
+            .Property(airport => airport.Type)
+            .HasConversion(x => x.Value, x => AirportType.FromString(x));
     }
 }

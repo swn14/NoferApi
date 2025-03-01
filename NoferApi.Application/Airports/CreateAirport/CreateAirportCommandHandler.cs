@@ -13,7 +13,7 @@ public class CreateAirportCommandHandler(IAppDbContext context) : ICommandHandle
         {
             Name = request.Name,
             Continent = request.Continent,
-            Type = request.Type,
+            Type = AirportType.FromString(request.Type),
             Keywords = request.Keywords,
             Latitude = request.Latitude,
             Longitude = request.Longitude,

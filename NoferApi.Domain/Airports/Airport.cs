@@ -5,7 +5,7 @@ namespace NoferApi.Domain.Airports;
 public class Airport : Entity
 {
     public int Id { get; set; }
-    public string Type { get; set; }
+    public AirportType Type { get; set; }
     public string Name { get; set; }
     public double Latitude { get; set; }
     public double Longitude { get; set; }
