@@ -46,7 +46,7 @@ namespace NoferApi.Infrastructure.Database.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("IatoCode")
+                    b.Property<string>("IataCode")
                         .IsRequired()
                         .HasColumnType("text");
 

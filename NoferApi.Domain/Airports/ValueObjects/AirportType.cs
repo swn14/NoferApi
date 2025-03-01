@@ -1,6 +1,6 @@
-namespace NoferApi.Domain.Airports;
+namespace NoferApi.Domain.Airports.ValueObjects;
 
-public class AirportType
+public record AirportType
 {
     public static readonly AirportType Balloonport = new("balloonport");
     public static readonly AirportType ClosedAirport = new("closed_airport");

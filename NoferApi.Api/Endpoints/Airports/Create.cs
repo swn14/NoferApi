@@ -21,7 +21,7 @@ internal sealed class Create : IEndpoint
         public string ScheduledService { get; set; }
         public string GpsCode { get; set; }
         public string IcaoCode { get; set; }
-        public string IatoCode { get; set; }
+        public string IataCode { get; set; }
         public string LocalCode { get; set; }
         public string WebsiteLink { get; set; }
         public string WikipediaLink { get; set; }
@@ -41,7 +41,7 @@ internal sealed class Create : IEndpoint
                     Latitude = request.Latitude,
                     Longitude = request.Longitude,
                     Municipality = request.Municipality,
-                    IatoCode = request.IatoCode,
+                    IatoCode = request.IataCode,
                     IcaoCode = request.IcaoCode,
                     ElevationFeet = request.ElevationFeet,
                     GpsCode = request.GpsCode,

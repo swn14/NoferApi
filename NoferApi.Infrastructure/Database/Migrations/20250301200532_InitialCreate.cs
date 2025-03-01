@@ -35,7 +35,7 @@ namespace NoferApi.Infrastructure.Database.Migrations
                     ScheduledService = table.Column<string>(type: "text", nullable: false),
                     GpsCode = table.Column<string>(type: "text", nullable: false),
                     IcaoCode = table.Column<string>(type: "text", nullable: false),
-                    IatoCode = table.Column<string>(type: "text", nullable: false),
+                    IataCode = table.Column<string>(type: "text", nullable: false),
                     LocalCode = table.Column<string>(type: "text", nullable: false),
                     WebsiteLink = table.Column<string>(type: "text", nullable: false),
                     WikipediaLink = table.Column<string>(type: "text", nullable: false),
