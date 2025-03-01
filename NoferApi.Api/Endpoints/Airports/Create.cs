@@ -25,7 +25,7 @@ internal sealed class Create : IEndpoint
         public string LocalCode { get; set; }
         public string WebsiteLink { get; set; }
         public string WikipediaLink { get; set; }
-        public HashSet<string> Keywords { get; set; } = new HashSet<string>();
+        public List<string> Keywords { get; set; } = [];
     }
 
     public void MapEndpoint(IEndpointRouteBuilder app)
@@ -50,7 +50,7 @@ internal sealed class Create : IEndpoint
                     LocalCode = request.LocalCode,
                     ScheduledService = request.ScheduledService,
                     WikipediaLink = request.WikipediaLink,
-                    WebsiteLink = request.WebsiteLink,
+                    WebsiteLink = request.WebsiteLink
                 };
 
                 Result<int> result = await sender.Send(command, cancellationToken);

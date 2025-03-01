@@ -21,6 +21,6 @@ public class Airport : Entity
     public string LocalCode { get; set; }
     public string WebsiteLink { get; set; }
     public string WikipediaLink { get; set; }
-    public HashSet<string> Keywords { get; set; } = new HashSet<string>();
+    public List<string> Keywords { get; set; } = [];
 
 }

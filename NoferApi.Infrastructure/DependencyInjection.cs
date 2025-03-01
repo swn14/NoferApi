@@ -19,11 +19,15 @@ public static class DependencyInjection
 
         services.AddDbContext<AppDbContext>(
             options => options
-                .UseSqlite(connectionString, options =>
-                    options.MigrationsHistoryTable(HistoryRepository.DefaultTableName, Schemas.Default)));
+                .UseNpgsql(connectionString, options =>
+                {
+                    options.MigrationsAssembly("NoferApi.Infrastructure");
+                    options.MigrationsHistoryTable(HistoryRepository.DefaultTableName, Schemas.Default);
+                }));
+                    
 
         services.AddScoped<IAppDbContext>(sp => sp.GetRequiredService<AppDbContext>());
-
+        
         return services;
     }
 }
